@@ -20,11 +20,9 @@
          * Format:
          * Country code + number
          * No +, spaces, brackets, or leading zero.
-         *
-         * Example:
-         * 265991234567
+        
          */
-        phoneNumber: "265987329583"
+        phoneNumber: "265984391755"
     };
 
     const formatSelection = (label, value) => {
