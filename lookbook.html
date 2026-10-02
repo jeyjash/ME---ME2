@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="ME & ME — Explore our latest visual stories, campaigns, and editorial looks."
+    >
+
+    <title>Lookbook | ME & ME</title>
+
+   <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+   <!-- Main Site Header -->
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo" aria-label="ME & ME Home">
+            ME & ME
+        </a>
+
+        <nav class="main-navigation" aria-label="Primary Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="icon-btn search-trigger" aria-label="Open Search">
+                <span class="icon-search"></span>
+            </button>
+
+           
+
+            <button type="button" class="menu-toggle" data-menu-toggle aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main id="main-content">
+
+        <!-- LOOKBOOK INTRO -->
+
+        <section class="lookbook-intro">
+
+            <div class="container">
+
+                <p
+                    class="eyebrow"
+                    data-reveal="up"
+                >
+                    Visual Journal
+                </p>
+
+                <h1
+                    class="page-title lookbook-title"
+                    data-reveal="up"
+                >
+                    Lookbook
+                </h1>
+
+                <p
+                    class="page-subtitle"
+                    data-reveal="up"
+                >
+                    A visual study of ME & ME through clothing,
+                    movement, texture, and space.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED LOOKBOOK STORY -->
+
+        <section class="lookbook-feature">
+
+            <div class="container">
+
+                <article
+                    class="lookbook-feature-card"
+                    data-reveal="up"
+                >
+
+                    <div
+                        class="lookbook-feature-media"
+                        data-reveal="image"
+                    >
+
+                        <img
+                            src=""
+                            alt="ME & ME editorial campaign"
+                            class="lookbook-feature-image"
+                            data-lookbook-feature-image
+                        >
+
+                    </div>
+
+                    <div class="lookbook-feature-content">
+
+                        <p class="eyebrow">
+                            Campaign 01
+                        </p>
+
+                        <h2 class="lookbook-feature-title">
+                            Form / Movement
+                        </h2>
+
+                        <p class="lookbook-feature-description">
+                            Clothing designed around movement,
+                            structure, and everyday expression.
+                        </p>
+
+                        <a
+                            href="#lookbook-gallery"
+                            class="editorial-link"
+                        >
+                            View Story
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDITORIAL STATEMENT -->
+
+        <section class="lookbook-statement">
+
+            <div class="container">
+
+                <div
+                    class="lookbook-statement-inner"
+                    data-reveal="up"
+                >
+
+                    <p class="eyebrow">
+                        ME & ME
+                    </p>
+
+                    <h2 class="lookbook-statement-title">
+                        Designed to exist
+                        beyond the moment.
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOOKBOOK GALLERY -->
+
+        <section
+            class="lookbook-gallery-section"
+            id="lookbook-gallery"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="eyebrow">
+                        Editorial
+                    </p>
+
+                    <h2
+                        class="section-title"
+                        data-reveal="up"
+                    >
+                        The Looks
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="lookbook-grid"
+                    data-lookbook-grid
+                    data-reveal-stagger="100"
+                >
+
+                    <!--
+                        Lookbook items will be injected
+                        dynamically by JavaScript.
+                    -->
+
+                </div>
+
+
+                <div
+                    id="lookbook-loading"
+                    class="state-container"
+                    aria-live="polite"
+                >
+
+                    <div class="loader"></div>
+
+                    <p>
+                        Loading lookbook...
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="lookbook-empty"
+                    class="state-container is-hidden"
+                    aria-live="polite"
+                >
+
+                    <p>
+                        No lookbook stories available at this time.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLOSING CTA -->
+
+        <section class="lookbook-closing">
+
+            <div class="container">
+
+                <div
+                    class="lookbook-closing-inner"
+                    data-reveal="up"
+                >
+
+                    <p class="eyebrow">
+                        Discover ME & ME
+                    </p>
+
+                    <h2 class="lookbook-closing-title">
+                        Wear the story.
+                    </h2>
+
+                    <a
+                        href="shop.html"
+                        class="btn-primary"
+                    >
+                        Shop Collection
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">ME & ME</a>
+            <p class="footer-description">
+                Premium minimalist streetwear for the modern individual.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Explore</h4>
+            <ul class="footer-list">
+                <li><a href="shop.html">Shop All</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-list">
+                <li>
+                    <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">
+                        Shipping & Returns
+                    </a>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100088209521997" aria-label="Facebook" target="_blank" rel="noopener noreferrer">FB</a>
+                <a href="https://wa.me/265984391755" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WA</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <p class="copyright">&copy; 2026 ME & ME. All rights reserved.</p>
+            <p class="legal">
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                |
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/products.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/products.js"></script>
+<script src="js/lookbook.js"></script>
+
+
+
+
+</body>
+</html>

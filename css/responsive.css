@@ -1,0 +1,382 @@
+/*
+========================================================
+ME & ME — RESPONSIVE.CSS
+Global Responsive Overrides
+========================================================
+*/
+
+
+/* ======================================================
+   1. LARGE DESKTOP
+====================================================== */
+
+@media (min-width: 1441px) {
+
+    .hero {
+        margin-inline: auto;
+        max-width: 1600px;
+    }
+
+    .container {
+        width: min(
+            calc(100% - 64px),
+            var(--max-width)
+        );
+    }
+
+    .product-grid {
+        gap: 56px 20px;
+    }
+}
+
+
+/* ======================================================
+   2. TABLET / SMALL LAPTOP
+====================================================== */
+
+@media (max-width: 1100px) {
+
+    :root {
+        --container-padding: 24px;
+    }
+
+    .container {
+        width: min(
+            calc(100% - 48px),
+            var(--max-width)
+        );
+    }
+
+    .product-container {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(320px, 0.8fr);
+        gap: 48px;
+    }
+
+    .product-info {
+        top: 24px;
+    }
+
+    .footer-grid {
+        gap: 32px;
+    }
+}
+
+
+/* ======================================================
+   3. TABLET
+====================================================== */
+
+@media (max-width: 900px) {
+
+    :root {
+        --container-padding: 20px;
+    }
+
+    .container {
+        width: min(
+            calc(100% - 40px),
+            var(--max-width)
+        );
+    }
+
+    .header-container {
+        min-height: 76px;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .footer-grid {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ======================================================
+   4. MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+        --container-padding: 20px;
+        --header-height: 70px;
+
+        --space-lg: 36px;
+        --space-xl: 64px;
+        --space-2xl: 96px;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    /* Prevent oversized editorial typography */
+
+    .section-title {
+        font-size: clamp(36px, 10vw, 56px);
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+    }
+
+    /* Header */
+
+    .site-header {
+        position: relative;
+    }
+
+    .header-container {
+        min-height: var(--header-height);
+    }
+
+    .main-navigation {
+        top: var(--header-height);
+    }
+
+    /* Product grids */
+
+    .product-grid,
+    .product-grid--featured,
+    .product-grid--compact {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Editorial components */
+
+    .editorial-content {
+        padding: 32px 24px;
+    }
+
+    /* Forms */
+
+    input,
+    select {
+        min-height: 46px;
+    }
+
+    textarea {
+        min-height: 130px;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* ======================================================
+   5. SMALL MOBILE
+====================================================== */
+
+@media (max-width: 600px) {
+
+    :root {
+        --container-padding: 16px;
+        --header-height: 68px;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .page-title {
+        font-size: clamp(50px, 16vw, 76px);
+    }
+
+    .section {
+        padding-block: 56px;
+    }
+
+    /* Header */
+
+    .header-actions {
+        gap: 2px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Product cards */
+
+    .product-card__media {
+        aspect-ratio: 3 / 4;
+    }
+
+    .product-card__name {
+        font-size: 12px;
+    }
+
+    .product-card__price {
+        font-size: 11px;
+    }
+
+    /* Collections */
+
+    .collection-grid {
+        gap: 48px;
+    }
+
+    /* Product page */
+
+    .product-gallery__main {
+        aspect-ratio: 4 / 5;
+    }
+
+    .product-name {
+        font-size: clamp(48px, 15vw, 76px);
+    }
+
+    .product-description {
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
+
+
+/* ======================================================
+   6. VERY SMALL DEVICES
+====================================================== */
+
+@media (max-width: 400px) {
+
+    :root {
+        --container-padding: 14px;
+    }
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .nav-link {
+        font-size: 34px;
+    }
+
+    .product-grid,
+    .product-grid--featured,
+    .product-grid--compact {
+        column-gap: 8px;
+    }
+
+    .product-card__info {
+        padding-top: 10px;
+    }
+
+    .product-card__name {
+        font-size: 11px;
+    }
+
+    .product-card__price {
+        font-size: 10px;
+    }
+
+    .product-gallery__thumbnails {
+        gap: 5px;
+    }
+
+    .product-actions {
+        gap: 8px;
+    }
+}
+
+
+/* ======================================================
+   7. LANDSCAPE MOBILE
+====================================================== */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero-content {
+        min-height: calc(90vh - 16px);
+    }
+
+    .hero-title {
+        font-size: clamp(48px, 9vw, 76px);
+    }
+
+    .main-navigation {
+        overflow-y: auto;
+    }
+}
+
+
+/* ======================================================
+   8. TOUCH DEVICES
+====================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .product-card:hover .product-card__image,
+    .collection-card:hover .collection-card__image,
+    .category-card:hover .category-card__image,
+    .lookbook-item:hover img {
+        transform: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .editorial-link::after,
+    .text-link::after {
+        transform: scaleX(1);
+    }
+}
+
+
+/* ======================================================
+   9. REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .product-card__image,
+    .collection-card__image,
+    .category-card__image,
+    .lookbook-item img {
+        transition: none;
+    }
+
+    .product-card:hover .product-card__image,
+    .collection-card:hover .collection-card__image,
+    .category-card:hover .category-card__image,
+    .lookbook-item:hover img {
+        transform: none;
+    }
+}

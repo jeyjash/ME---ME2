@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ME & ME — Premium minimalist streetwear product details.">
+    <title>Product | ME & ME</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Site Header / Navigation -->
+    <!-- Main Site Header -->
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo" aria-label="ME & ME Home">
+            ME & ME
+        </a>
+
+        <nav class="main-navigation" aria-label="Primary Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="icon-btn search-trigger" aria-label="Open Search">
+                <span class="icon-search"></span>
+            </button>
+
+           
+
+            <button type="button" class="menu-toggle" data-menu-toggle aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+    <main id="main-content">
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb-container container" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Home</a></li>
+                <li class="breadcrumb-item"><a href="shop.html" class="breadcrumb-link">Shop</a></li>
+                <li class="breadcrumb-item" aria-current="page" data-product-breadcrumb-name></li>
+            </ol>
+        </nav>
+
+        <!-- Loading State -->
+        <div id="product-loading" class="state-container" aria-live="polite">
+            <div class="loader"></div>
+            <p>Loading product...</p>
+        </div>
+
+        <!-- Product Not Found State -->
+        <div id="product-not-found" class="state-container is-hidden" aria-live="polite">
+            <div class="not-found-content">
+                <h2 class="not-found-title">Product Not Found</h2>
+                <p>The item you are looking for is currently unavailable.</p>
+                <a href="shop.html" class="btn-secondary">Back to Shop</a>
+            </div>
+        </div>
+
+        <!-- Product Detail Section -->
+        <section class="product-detail" data-reveal="up">
+            <div class="container product-container">
+                
+                <!-- A. PRODUCT MEDIA -->
+                <div class="product-media" data-product-gallery>
+                    <div class="product-gallery__main">
+                        <img 
+                            class="product-gallery__main-image" 
+                            data-product-main-image 
+                            alt="" 
+                            data-reveal="image"
+                        >
+                    </div>
+                    <div class="product-gallery__thumbnails" data-product-thumbnails>
+                        <!-- Thumbnails will be injected by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- B. PRODUCT INFORMATION -->
+                <div class="product-info">
+                    <p class="product-category" data-product-category></p>
+                    <h1 class="product-name" data-product-name></h1>
+                    <p class="product-price" data-product-price></p>
+
+                    <div class="product-description" data-product-description></div>
+
+                    <div class="product-selections">
+                        <!-- Color Selection -->
+                        <fieldset class="selection-group">
+                            <legend>Color</legend>
+                            <div class="product-colors" data-product-colors></div>
+                        </fieldset>
+
+                        <!-- Size Selection -->
+                        <fieldset class="selection-group">
+                            <legend>Size</legend>
+                            <div class="product-sizes" data-product-sizes></div>
+                        </fieldset>
+                    </div>
+
+                    <p class="product-stock-status" data-product-stock></p>
+
+                    <div class="product-actions">
+                        <!-- Quantity Selector -->
+                        <div class="quantity-selector">
+                            <button type="button" class="qty-btn" data-quantity-decrease aria-label="Decrease quantity">-</button>
+                            <input
+                                type="number"
+                                class="qty-display"
+                                data-product-quantity
+                                value="1"
+                                min="1"
+                                step="1"
+                                inputmode="numeric"
+                                aria-label="Quantity"
+                            >
+                            <button type="button" class="qty-btn" data-quantity-increase aria-label="Increase quantity">+</button>
+                        </div>
+
+                        <!-- WhatsApp Order CTA -->
+                        <a href="#" class="product-whatsapp-button" data-whatsapp-order>
+                            Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Related Products Section -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title" data-reveal="up">You May Also Like</h2>
+                <div class="product-grid" data-related-products>
+                    <!-- Related products will be injected by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">ME & ME</a>
+            <p class="footer-description">
+                Premium minimalist streetwear for the modern individual.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Explore</h4>
+            <ul class="footer-list">
+                <li><a href="shop.html">Shop All</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-list">
+                <li>
+                    <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">
+                        Shipping & Returns
+                    </a>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100088209521997" aria-label="Facebook" target="_blank" rel="noopener noreferrer">FB</a>
+                <a href="https://wa.me/265984391755" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WA</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <p class="copyright">&copy; 2026 ME & ME. All rights reserved.</p>
+            <p class="legal">
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                |
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Shared Scripts -->
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/products.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/product.js"></script>
+
+
+
+
+</body>
+</html>

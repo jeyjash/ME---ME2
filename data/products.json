@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": "mm-signature-tee",
+      "slug": "mm-signature-tee",
+      "name": "M|M Signature Tee",
+      "category": "t-shirts",
+      "price": 45000,
+      "currency": "MWK",
+      "description": "",
+      "images": [
+  "/assets/products/signature-tee-01.jpg.jfif"
+],
+      "colors": [],
+      "sizes": [],
+      "stock_status": "in_stock",
+      "is_featured": true,
+      "is_new_arrival": true,
+      "collection": "current-season"
+    },
+    {
+      "id": "living-life-shirt",
+      "slug": "living-life-shirt",
+      "name": "Living Life Shirt",
+      "category": "shirts",
+      "price": 55000,
+      "currency": "MWK",
+      "description": "",
+      "images": [
+  "/assets/products/living-life-shirt-01.jpg.jfif"
+],
+      "colors": [],
+      "sizes": [],
+      "stock_status": "in_stock",
+      "is_featured": true,
+      "is_new_arrival": true,
+      "collection": "current-season"
+    },
+    {
+      "id": "oversize-hoodie",
+      "slug": "oversize-hoodie",
+      "name": "Oversize Hoodie",
+      "category": "hoodies",
+      "price": 65000,
+      "currency": "MWK",
+      "description": "",
+      "images": [
+  "/assets/products/oversize-hoodie-01.jpg.jfif"
+],
+      "colors": [],
+      "sizes": [],
+      "stock_status": "in_stock",
+      "is_featured": true,
+      "is_new_arrival": true,
+      "collection": "current-season"
+    },
+    {
+      "id": "denim-jacket",
+      "slug": "denim-jacket",
+      "name": "Denim Jacket",
+      "category": "jackets",
+      "price": 85000,
+      "currency": "MWK",
+      "description": "",
+      "images": [
+  "/assets/products/denim-jacket-01.jpg.jfif"
+],
+      "colors": [],
+      "sizes": [],
+      "stock_status": "in_stock",
+      "is_featured": false,
+      "is_new_arrival": true,
+      "collection": "current-season"
+    },
+    {
+      "id": "mm-classic-sneaker",
+      "slug": "mm-classic-sneaker",
+      "name": "M|M Classic Sneaker",
+      "category": "shoes",
+      "price": 120000,
+      "currency": "MWK",
+      "description": "",
+      "images": [
+  "/assets/products/classic-sneaker-01.jpg.jfif"
+],
+      "colors": [],
+      "sizes": [],
+      "stock_status": "in_stock",
+      "is_featured": false,
+      "is_new_arrival": true,
+      "collection": "current-season"
+    }
+  ]
+}

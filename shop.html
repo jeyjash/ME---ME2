@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ME & ME — Premium minimalist streetwear collection.">
+    <title>Shop | ME & ME</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+    <!-- Shop specific styles will be added via main.css or shop.css -->
+</head>
+<body>
+
+    <!-- Site Header / Navigation -->
+    <!-- Main Site Header -->
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo" aria-label="ME & ME Home">
+            ME & ME
+        </a>
+
+        <nav class="main-navigation" aria-label="Primary Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="icon-btn search-trigger" aria-label="Open Search">
+                <span class="icon-search"></span>
+            </button>
+
+      
+
+            <button type="button" class="menu-toggle" data-menu-toggle aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+    <main id="main-content">
+        
+        <!-- Shop Introduction -->
+        <section class="shop-hero">
+            <div class="container">
+                <h1 class="page-title">All Products</h1>
+                <p class="page-subtitle">Explore our curated minimalist collection.</p>
+            </div>
+        </section>
+
+        <!-- Shop Toolbar: Search, Category, and Filters -->
+        <section class="shop-toolbar">
+            <div class="container toolbar-wrapper">
+                
+                <!-- Search Area -->
+                <div class="search-container">
+                    <input type="text" id="shop-search" class="search-input" placeholder="Search products..." aria-label="Search products">
+                </div>
+
+                <!-- Filters & Sorting -->
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="category-filter">Category</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <!-- Categories populated by JS -->
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort-select">Sort By</label>
+                        <select id="sort-select" class="filter-select">
+                            <option value="newest">Newest Arrivals</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="featured">Featured</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Product Results Area -->
+        <section class="product-display">
+            <div class="container">
+
+               <!-- Loading State — Skeleton -->
+<div id="shop-loading" class="state-container" aria-live="polite">
+    <div class="skeleton-grid">
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line skeleton-line--price"></div>
+        </div>
+    </div>
+</div>
+
+                <!-- Empty Results State -->
+                <div id="shop-empty" class="state-container is-hidden" aria-live="polite">
+                    <p>No products found matching your criteria.</p>
+                    <a href="#" class="reset-btn">Clear all filters</a>
+                </div>
+
+                <!-- Product Grid -->
+                <div id="product-grid" class="product-grid">
+                    <!-- Products will be dynamically injected here by products.js -->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Product Card Template: Used by JS to clone and populate -->
+    <template id="product-card-template">
+        <article class="product-card" data-product-id="">
+            <a href="" class="product-card__link" aria-label="View product details">
+                <div class="product-card__image-wrapper">
+                    <!-- Data attributes for JS hooks -->
+                    <img src="" alt="" class="product-card__image" data-reveal="image">
+                    
+                    <!-- Labels (Featured/New) -->
+                    <span class="product-card__label product-card__label--new is-hidden">New</span>
+                    <span class="product-card__label product-card__label--featured is-hidden">Featured</span>
+                </div>
+
+                <div class="product-card__info">
+                    <span class="product-card__category"></span>
+                    <h3 class="product-card__name"></h3>
+                    <p class="product-card__price"></p>
+                </div>
+            </a>
+        </article>
+    </template>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">ME & ME</a>
+            <p class="footer-description">
+                Premium minimalist streetwear for the modern individual.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Explore</h4>
+            <ul class="footer-list">
+                <li><a href="shop.html">Shop All</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-list">
+                <li>
+                    <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">
+                        Shipping & Returns
+                    </a>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100088209521997" aria-label="Facebook" target="_blank" rel="noopener noreferrer">FB</a>
+                <a href="https://wa.me/265984391755" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WA</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <p class="copyright">&copy; 2026 ME & ME. All rights reserved.</p>
+            <p class="legal">
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                |
+                <a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+ <script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/products.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/search.js"></script>
+<script src="js/shop.js"></script>
+
+
+</body>
+</html>

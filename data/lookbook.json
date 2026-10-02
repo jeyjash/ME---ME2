@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "id": "look-001",
+      "title": "Form / Movement",
+      "description": "A study of silhouette, movement, texture, and space.",
+      "image": "/assets/images/brand-story.jpg.jfif",
+      "alt": "ME & ME editorial image",
+      "layout": "large",
+      "is_featured": true
+    },
+    {
+      "id": "look-002",
+      "title": "T-Shirts",
+      "description": "Clean silhouettes and everyday expression.",
+      "image": "/assets/images/category-tshirts.jpg.jfif",
+      "alt": "ME & ME T-shirt editorial image",
+      "layout": "medium",
+      "is_featured": false
+    },
+    {
+      "id": "look-003",
+      "title": "Shirts",
+      "description": "Structure with a restrained attitude.",
+      "image": "/assets/images/category-shirts.jpg.jfif",
+      "alt": "ME & ME shirt editorial image",
+      "layout": "wide",
+      "is_featured": false
+    },
+    {
+      "id": "look-004",
+      "title": "Accessories",
+      "description": "The details complete the expression.",
+      "image": "/assets/images/category-accessories.jpg.jfif",
+      "alt": "ME & ME accessories editorial image",
+      "layout": "medium",
+      "is_featured": false
+    },
+    {
+      "id": "look-005",
+      "title": "Bags",
+      "description": "Form designed for movement.",
+      "image": "/assets/images/category-bags.jpg.jfif",
+      "alt": "ME & ME bags editorial image",
+      "layout": "medium",
+      "is_featured": false
+    }
+  ]
+}

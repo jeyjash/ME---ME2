@@ -1,0 +1,84 @@
+/* =========================================================
+   SOFT IPHONE-STYLE INTERACTIONS
+   ========================================================= */
+
+/* Smooth scrolling everywhere */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Soft button press feel */
+.btn,
+.btn-primary,
+.btn-secondary,
+.hero-cta,
+.product-whatsapp-button,
+.editorial-cta,
+.section-link {
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn:active,
+.btn-primary:active,
+.btn-secondary:active,
+.hero-cta:active,
+.product-whatsapp-button:active {
+    transform: scale(0.97);
+}
+
+/* Soft product card lift */
+.product-card {
+    transition:
+        transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Soft category card */
+.category-card {
+    transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Soft nav links */
+.nav-link {
+    transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+/* Soft image zoom (already exists, just ensure smoothness) */
+.product-card__image,
+.category-media img,
+.editorial-image,
+.hero-image {
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Soft focus rings */
+:focus-visible {
+    outline: 2px solid rgba(13, 13, 13, 0.35);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Reduce harshness on mobile taps */
+@media (hover: none) {
+    .product-card:hover,
+    .category-card:hover {
+        transform: none;
+    }
+}

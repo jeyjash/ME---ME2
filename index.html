@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ME & ME — Premium minimalist streetwear. Living life without competition.">
+
+    <title>Me & Me — Living Life Without Competition</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar" role="complementary">
+    <div class="announcement-inner">
+        <p class="announcement-text">FREE SHIPPING ON ORDERS OVER MK 150,000</p>
+        <button type="button" class="announcement-close" aria-label="Close announcement" data-announcement-close>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Main Site Header -->
+<!-- Main Site Header -->
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo" aria-label="ME & ME Home">
+            ME & ME
+        </a>
+
+        <nav class="main-navigation" aria-label="Primary Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button type="button" class="icon-btn search-trigger" aria-label="Open Search">
+                <span class="icon-search"></span>
+            </button>
+
+            
+
+            <button type="button" class="menu-toggle" data-menu-toggle aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<main id="main-content">
+
+    <!-- ════════════════════════════════════════════════════
+         HERO
+         ════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero" data-reveal>
+        <div class="hero-media">
+            <img src="assets/images/hero-main.jpg.jfif"
+                 alt="Me & Me campaign — model wearing a black graphic jacket against a dark studio backdrop"
+                 class="hero-image">
+        </div>
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <div class="hero-content__inner">
+                <p class="hero-eyebrow" data-reveal="up">ME &amp; ME — SS26</p>
+                <h1 class="hero-title" data-reveal="up">
+                    <span class="hero-title__line">Living Life</span>
+                    <span class="hero-title__line">Without</span>
+                    <span class="hero-title__line hero-title__line--accent">Competition.</span>
+                </h1>
+
+                <div class="hero-meta">
+                    <a href="collections.html" class="hero-cta" data-reveal="up">
+                        <span class="hero-cta__text">Explore Collections</span>
+                        <span class="hero-cta__line" aria-hidden="true"></span>
+                    </a>
+
+                    <div class="hero-scroll-indicator" aria-hidden="true" data-reveal="up">
+                        <span class="hero-scroll-indicator__line"></span>
+                        <span class="hero-scroll-indicator__label">Scroll</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slider-nav">
+            <ol class="slider-indicators">
+                <li class="indicator-item is-active" data-hero-slide="1">01</li>
+                <li class="indicator-item" data-hero-slide="2">02</li>
+                <li class="indicator-item" data-hero-slide="3">03</li>
+            </ol>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         BRAND VALUES STRIP
+         ════════════════════════════════════════════════════ -->
+    <section class="value-strip" aria-label="Brand values" data-reveal="up">
+        <div class="value-strip__inner">
+            <article class="value-item">
+                <h2 class="value-title">Premium Quality</h2>
+                <p class="value-description">Built to last.</p>
+            </article>
+
+            <span class="value-divider" aria-hidden="true"></span>
+
+            <article class="value-item">
+                <h2 class="value-title">Limited Drops</h2>
+                <p class="value-description">Exclusivity in every piece.</p>
+            </article>
+
+            <span class="value-divider" aria-hidden="true"></span>
+
+            <article class="value-item">
+                <h2 class="value-title">Worldwide Shipping</h2>
+                <p class="value-description">Delivering culture.</p>
+            </article>
+
+            <span class="value-divider" aria-hidden="true"></span>
+
+            <article class="value-item">
+                <h2 class="value-title">Secure Checkout</h2>
+                <p class="value-description">Safe and simple.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         LATEST DROPS
+         ════════════════════════════════════════════════════ -->
+    <section class="latest-drops section" id="latest-drops">
+        <div class="section-header" data-reveal="up">
+            <div class="header-text">
+                <p class="section-eyebrow">New Arrivals</p>
+                <h2 class="section-title">Latest Drops</h2>
+            </div>
+            <a href="shop.html" class="section-link">
+                View All
+                <span class="section-link__arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+
+        <div class="product-grid" data-reveal-stagger="80">
+            <!-- Product 1 -->
+            <article class="product-card" data-product-id="mm-signature-tee" data-reveal="up">
+                <a href="product.html?id=mm-signature-tee" class="product-card-link">
+                    <div class="product-card__media">
+                        <img src="assets/products/signature-tee-01.jpg.jfif"
+                             alt="M|M Signature Tee — black graphic tee with embossed logo"
+                             class="product-card__image" loading="lazy">
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">M|M Signature Tee</h3>
+                        <p class="product-card__price">MK 45,000</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card" data-product-id="living-life-shirt" data-reveal="up">
+                <a href="product.html?id=living-life-shirt" class="product-card-link">
+                    <div class="product-card__media">
+                        <img src="assets/products/living-life-shirt-01.jpg.jfif"
+                             alt="Living Life Shirt — premium button-down with subtle branding"
+                             class="product-card__image" loading="lazy">
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Living Life Shirt</h3>
+                        <p class="product-card__price">MK 55,000</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card" data-product-id="oversize-hoodie" data-reveal="up">
+                <a href="product.html?id=oversize-hoodie" class="product-card-link">
+                    <div class="product-card__media">
+                        <img src="assets/products/oversize-hoodie-01.jpg.jfif"
+                        alt="M|M Oversize Hoodie — relaxed fit heavyweight cotton"
+                        class="product-card__image" loading="lazy">
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Oversize Hoodie</h3>
+                        <p class="product-card__price">MK 65,000</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card" data-product-id="denim-jacket" data-reveal="up">
+                <a href="product.html?id=denim-jacket" class="product-card-link">
+                    <div class="product-card__media">
+                        <img src="assets/products/denim-jacket-01.jpg.jfif"
+                             alt="M|M Denim Jacket — structured silhouette with tonal stitching"
+                             class="product-card__image" loading="lazy">
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Denim Jacket</h3>
+                        <p class="product-card__price">MK 85,000</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         EDITORIAL — BRAND PHILOSOPHY
+         ════════════════════════════════════════════════════ -->
+    <section class="editorial-section" id="philosophy">
+        <div class="editorial-container">
+            <div class="editorial-image-box" data-reveal="image">
+                <img src="assets/images/brand-story.jpg.jfif"
+                     alt="Me & Me editorial lifestyle — a figure mid-stride against a golden hour backdrop"
+                     class="editorial-image" loading="lazy">
+            </div>
+            <div class="editorial-content" data-reveal="up">
+                <p class="editorial-eyebrow">Our Philosophy</p>
+                <h2 class="editorial-title">More Than Clothing.<br>It's a Mindset.</h2>
+                <p class="editorial-body">ME & ME is rooted in the belief that true style is an expression of inner confidence — quiet, deliberate, and unmistakable. We design for individuals who compete only with the person they were yesterday.</p>
+                <a href="about.html" class="editorial-cta">
+                    <span>Read Our Story</span>
+                    <span class="editorial-cta__arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         SHOP BY CATEGORY
+         ════════════════════════════════════════════════════ -->
+    <section class="categories-section section" id="categories">
+        <div class="section-header" data-reveal="up">
+            <div class="header-text">
+                <p class="section-eyebrow">Shop by Category</p>
+                <h2 class="section-title">Find Your Style</h2>
+            </div>
+            <a href="shop.html" class="section-link">
+                View All
+                <span class="section-link__arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+
+        <div class="category-grid" data-reveal-stagger="100">
+            <!-- Row 1: Featured — 2-up asymmetric -->
+            <article class="category-card category-card--wide" data-category="t-shirts" data-reveal="up">
+                <a href="shop.html?category=t-shirts" class="category-link">
+                    <div class="category-media">
+                        <img src="assets/images/category-tshirts.jpg.jfif" alt="Shop T-Shirts" loading="lazy">
+                    </div>
+                    <div class="category-card__overlay">
+                        <h3 class="category-name">T-Shirts</h3>
+                    </div>
+                </a>
+            </article>
+
+            <article class="category-card category-card--wide" data-category="shirts" data-reveal="up">
+                <a href="shop.html?category=shirts" class="category-link">
+                    <div class="category-media">
+                        <img src="assets/images/category-shirts.jpg.jfif" alt="Shop Shirts" loading="lazy">
+                    </div>
+                    <div class="category-card__overlay">
+                        <h3 class="category-name">Shirts</h3>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Row 2: 3-up -->
+            <article class="category-card" data-category="hoodies" data-reveal="up">
+                <a href="shop.html?category=hoodies" class="category-link">
+                    <div class="category-media">
+                       <img src="assets/images/category-jackets.jpg.jfif" alt="Shop Jackets" loading="lazy">
+                    </div>
+                    <div class="category-card__overlay">
+                        <h3 class="category-name">Hoodies</h3>
+                    </div>
+                </a>
+            </article>
+
+            <article class="category-card" data-category="jackets" data-reveal="up">
+                <a href="shop.html?category=jackets" class="category-link">
+                    <div class="category-media">
+                        <img src="assets/images/category-jackets.jpg (2).jfif" alt="Shop Jackets" loading="lazy">
+                    </div>
+                    <div class="category-card__overlay">
+                        <h3 class="category-name">Jackets</h3>
+                    </div>
+                </a>
+            </article>
+
+            <article class="category-card" data-category="accessories" data-reveal="up">
+                <a href="shop.html?category=accessories" class="category-link">
+                    <div class="category-media">
+                        <img src="assets/images/category-accessories.jpg.jfif" alt="Shop Accessories" loading="lazy">
+                    </div>
+                    <div class="category-card__overlay">
+                        <h3 class="category-name">Accessories</h3>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════
+         NEWSLETTER / COMMUNITY
+         ════════════════════════════════════════════════════ -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="newsletter-content" data-reveal="up">
+            <p class="newsletter-eyebrow">Be Part of the Movement</p>
+            <h2 class="newsletter-title">Join the M|M Family</h2>
+
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="newsletter-email" class="sr-only">Email Address</label>
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        name="email"
+                        placeholder="Your email address"
+                        autocomplete="email"
+                        required
+                    >
+                    <button type="submit" aria-label="Subscribe to newsletter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <p class="newsletter-note">Early access to new drops and exclusive offers. No spam.</p>
+
+          <div class="social-icons-simple">
+            <a href="https://www.facebook.com/profile.php?id=100088209521997" aria-label="Facebook" data-social-link="facebook" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5M14 7h.01M6 10h.01"></path></svg>
+            </a>
+            <a href="https://wa.me/265984391755" aria-label="WhatsApp" data-social-link="whatsapp" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.5 8.5 0 0 1 7.6 11.7l.9 3.9-3.9-.9z"></path></svg>
+            </a>
+            <a href="michaelmtambo21@gmail.com" aria-label="Email" data-social-link="email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-grid">
+
+            <div class="footer-column brand-column">
+                <span class="footer-logo">M|M</span>
+                <p class="footer-tagline">
+                    Living life without competition.<br>
+                    This is more than fashion.<br>
+                    This is a way of life.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html">All Products</a></li>
+                    <li><a href="shop.html?category=t-shirts">T-Shirts</a></li>
+                    <li><a href="shop.html?category=shirts">Shirts</a></li>
+                    <li><a href="shop.html?category=hoodies">Hoodies</a></li>
+                    <li><a href="shop.html?category=jackets">Jackets</a></li>
+                    <li><a href="shop.html?category=accessories">Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html#story">Our Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+           <div class="footer-column">
+            <h4 class="footer-heading">Help</h4>
+            <ul class="footer-links">
+                <li><a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Shipping</a></li>
+                <li><a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Returns</a></li>
+                <li><a href="contact.html#faq">FAQs</a></li>
+                <li><a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">Size Guide</a></li>
+            </ul>
+        </div>
+
+           <div class="footer-column">
+            <h4 class="footer-heading">Follow Us</h4>
+            <ul class="footer-links">
+                <li><a href="https://www.facebook.com/profile.php?id=100088209521997" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://wa.me/265984391755" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                <li><a href="mailto:michaelmtambo21@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <p class="copyright">&copy; 2026 Me & Me. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="https://wa.me/265984391755" class="legal-link" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                <a href="https://wa.me/265984391755" class="legal-link" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+
+</body>
+</html>

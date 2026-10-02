@@ -1,0 +1,28 @@
+{
+  "collections": [
+    {
+      "id": "collection-001",
+      "slug": "current-season",
+      "name": "Current Season",
+      "description": "Minimalist essentials designed for longevity, movement, and everyday expression.",
+      "image": "/assets/images/brand-story.jpg.jfif",
+      "is_featured": true
+    },
+    {
+      "id": "collection-002",
+      "slug": "signature",
+      "name": "Signature",
+      "description": "Core ME & ME pieces built around clean silhouettes and considered detail.",
+      "image": "/assets/images/category-tshirts.jpg.jfif",
+      "is_featured": false
+    },
+    {
+      "id": "collection-003",
+      "slug": "everyday-structure",
+      "name": "Everyday Structure",
+      "description": "A study of structure, texture, and understated streetwear.",
+      "image": "/assets/images/category-shirts.jpg.jfif",
+      "is_featured": false
+    }
+  ]
+}

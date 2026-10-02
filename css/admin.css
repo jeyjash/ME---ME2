@@ -1,0 +1,229 @@
+/* 
+ * ME & ME Admin - Global Foundation Stylesheet
+ * File: admin/css/admin.css
+ */
+
+:root {
+    /* Colors */
+    --admin-color-primary: #0D0D0D;
+    --admin-color-bg: #F5F5F3;
+    --admin-color-surface: #FFFFFF;
+    --admin-color-muted: #8B8882;
+    --admin-color-border: #E4E2DE;
+    --admin-color-text: #1A1A1A;
+    
+    /* Feedback Colors (Restrained) */
+    --admin-color-success: #2D5A27;
+    --admin-color-warning: #9A6700;
+    --admin-color-danger: #A4161A;
+
+    /* Typography */
+    --admin-font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Font Sizes */
+    --admin-font-size-xs: 0.75rem;    /* 12px */
+    --admin-font-size-sm: 0.875rem;   /* 14px */
+    --admin-font-size-base: 1rem;     /* 16px */
+    --admin-font-size-lg: 1.125rem;   /* 18px */
+    --admin-font-size-xl: 1.25rem;    /* 20px */
+    --admin-font-size-2xl: 1.5rem;    /* 24px */
+    --admin-font-size-3xl: 1.875rem;  /* 30px */
+
+    /* Font Weights */
+    --admin-font-weight-normal: 400;
+    --admin-font-weight-medium: 500;
+    --admin-font-weight-semibold: 600;
+    --admin-font-weight-bold: 700;
+
+    /* Spacing Scale */
+    --admin-space-xs: 0.25rem;
+    --admin-space-sm: 0.5rem;
+    --admin-space-md: 1rem;
+    --admin-space-lg: 1.5rem;
+    --admin-space-xl: 2rem;
+    --admin-space-2xl: 3rem;
+    --admin-space-3xl: 4rem;
+
+    /* UI Constants */
+    --admin-radius: 4px;
+    --admin-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --admin-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --admin-transition: 0.2s ease-in-out;
+    
+    /* Layout Constants */
+    --admin-sidebar-width: 260px;
+    --admin-header-height: 64px;
+    --admin-content-max-width: 1200px;
+}
+
+/* 1. Global Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 2. Base Elements */
+body {
+    font-family: var(--admin-font-main);
+    font-size: var(--admin-font-size-base);
+    font-weight: var(--admin-font-weight-normal);
+    background-color: var(--admin-color-bg);
+    color: var(--admin-color-text);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--admin-font-main);
+    font-weight: var(--admin-font-weight-semibold);
+    line-height: 1.2;
+    color: var(--admin-color-primary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity var(--admin-transition);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* 3. Typography Baseline */
+p {
+    margin-bottom: var(--admin-space-md);
+}
+
+/* 4. Form Baseline */
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--admin-color-text);
+    background-color: var(--admin-color-surface);
+    border: 1px solid var(--admin-color-border);
+    border-radius: var(--admin-radius);
+    padding: 0.625rem 0.75rem;
+    width: 100%;
+    transition: border-color var(--admin-transition), box-shadow var(--admin-transition);
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    width: auto;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* 5. Focus Behavior (Accessibility) */
+:focus-visible {
+    outline: 2px solid var(--admin-color-primary);
+    outline-offset: 2px;
+}
+
+input:focus-visible, 
+select:focus-visible, 
+textarea:focus-visible, 
+button:focus-visible {
+    border-color: var(--admin-color-primary);
+}
+
+/* 6. Button Base (Generic) */
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--admin-transition), color var(--admin-transition), transform 0.1s ease;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* 7. Utility Classes */
+.is-hidden {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-muted {
+    color: var(--admin-color-muted);
+}
+
+.text-danger {
+    color: var(--admin-color-danger);
+}
+
+.text-success {
+    color: var(--admin-color-success);
+}
+
+.text-warning {
+    color: var(--admin-color-warning);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* 8. Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0s !important;
+    }
+}
